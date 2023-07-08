@@ -1,0 +1,40 @@
+/* ---- particles.js container ---- */
+canvas {
+    font: normal 75% Arial, Helvetica, sans-serif;
+    display: block;
+  }
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  #stats,
+  .count-particles {
+    -webkit-user-select: none;
+    user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  
+  #stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles {
+    border-radius: 0 0 3px 3px;
+  }
+  
+  /* particle-js-container-ends */
+  @media (max-width:576px){
+    #particles-js{
+        height: 80vh;
+    }
+  }
