@@ -23,6 +23,12 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
 }
+main{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 /* nav starts */
 nav {
   width: 100%;
@@ -169,6 +175,11 @@ nav.open .links a{
     color: var(--dark-main);
   }
 }
+@media (max-width : 768px){
+  nav .container .logo{
+    opacity: 0;
+  }
+}
 /* nav ends */
 
 /* hero section starts */
@@ -187,6 +198,10 @@ nav.open .links a{
   align-items: flex-start;
   justify-content: center;
   gap: 40px;
+}
+.hero-sec .hero-block a{
+  text-decoration: none;
+  color: #000;
 }
 .hero-sec .container .title{
   display: flex;
@@ -355,6 +370,8 @@ nav.open .links a{
   .about .img-container .img-md-responsive{
     display: block;
     width: 100%;
+    position: relative;
+    z-index: 9;
   }
   .about .row{
     gap: 30px;
@@ -514,6 +531,10 @@ nav.open .links a{
 }
 .between-section .img-container h1 span{
   font-weight: 500;
+}
+.between-section .img-container a{
+  text-decoration: none;
+  color: #fff;
 }
 .between-section .img-container .btn{
   padding: 0.5em 2em;
@@ -749,12 +770,27 @@ nav.open .links a{
   cursor: pointer;
   transition: all 0.4s ease;
 }
+.projects .card .card-container .link a{
+  text-decoration: none;
+  color: var(--dark-main);
+  font-size: 1em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5em;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.projects .card .card-container .link:hover a{
+  gap: 1em;
+  color: #020065;
+}
 .projects .card .card-container .links .link:nth-child(1):hover{
   gap: 1em;
+  color: #020065;
 }
-.projects .card .card-container .links .link:nth-child(2):hover{
-  gap: 1em;
-}
+
 .projects .card .card-container .link i{
   font-size: 1.5em;
 }
@@ -790,13 +826,13 @@ nav.open .links a{
     font-size: 1em;
   }
   .projects .card .card-container .link{
-    font-size: 0.8em;
+    font-size: 1.3em;
   }
   .projects .card .card-container span{
     font-size: 0.6em;
   }
   .projects .card .card-container .link i{
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .projects .head h2{
     font-size: 1.5em;
