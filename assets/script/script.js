@@ -22,24 +22,9 @@ hamburger_menu.addEventListener("click", () => {
 
 links.forEach((link) => link.addEventListener("click", () => closeMenu()));
 
-
-  
-    // // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    // const form = document.querySelector('.needs-validation')
-
-    // form.addEventListener('submit',(event)=>{
-    //     event.preventDefault();
-    //     form.classList.add('was-validated')
-    // })
-
-// const contactForm = document.getElementById('contactForm');
-// contactForm.addEventListener('submit',(event)=>{
-//     event.preventDefault();
-// })
-    
-
-// particle.js 
-// for hero section
+particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+});
 particlesJS("particles-js",
     {
         "particles": {
